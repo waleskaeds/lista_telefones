@@ -58,6 +58,7 @@
 p {
     color: #cbd0f7;
     font-family: 'Bree Serif', serif;
+    position: relative;
 }
 
 a {
@@ -101,4 +102,23 @@ input::-webkit-inner-spin-button {
 }
 .espaco{
     width: 60px;
+}
+
+.buttonList{
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 40%;
+    position: relative;
+    cursor: pointer;
+    border-color: #6C63FF;
+    font-family: 'Bree Serif', serif;
+}
+
+.buttonList:hover{
+    background-color: #423bca;
+    transition: 0.3s;
 }

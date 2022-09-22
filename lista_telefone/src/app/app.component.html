@@ -1,0 +1,26 @@
+<section class="areaCad">
+
+  <div class="divForm">
+    <p class="title">Cadastre seu número</p>
+    
+      <input type="text" id="nome" class="inputCad" placeholder="Nome" autofocus [(ngModel)]="usuario">
+      <br>
+      <input type="number" id="telefone" class="inputCad" placeholder="Telefone" [(ngModel)]="telefone">
+      <br>
+      <input type="submit" class="buttonCad" value="cadastrar" (click)="cadastro()">
+  </div>
+
+   <div class="lista">
+    <p class="title">Lista de Contatos</p>
+    <p>Nome e Telefone</p>
+    <button type="submit" class="buttonList" (click)="listar()">Listar</button>
+
+    <table >
+      <tr *ngFor="let pessoa of pessoas"> 
+        <td> {{pessoa.nome}} </td>  
+        <td> {{pessoa.telefone}} </td>  
+      </tr>
+    </table>
+  </div>
+
+</section>
